@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <div className='md:pr-4 md:pl-20 md:pt-4 pt-4  '>
-      <div className='flex flex-wrap p-4 items-center justify-center md:justify-normal pt-14 '>
+      <div className='flex flex-wrap p-4 items-center justify-center  pt-14 '>
         {data?.map((item, i) => (
           <div>
             <ShowCard item={item} i={i} />
