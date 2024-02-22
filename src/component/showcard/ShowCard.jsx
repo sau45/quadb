@@ -7,7 +7,7 @@ import { setNotVisibleButton, setShowData } from '../../redux/ShowSlice';
 
 
 const ShowCard = ({ item, i }) => {
-    console.log(item)
+  
 
 
     return (

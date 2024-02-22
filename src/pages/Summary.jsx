@@ -23,7 +23,9 @@ const Summary = () => {
 
 
     return (
-        <div className='flex flex-col md:flex-row  pt-24 pr-8 pl-8 items-center justify-center '>
+        <>
+        {
+            showData &&  <div className='flex flex-col md:flex-row  pt-24 pr-8 pl-8 items-center justify-center '>
             <ShowCard item={showData} i={showData?.show?.id} />
             <div className='flex flex-col gap-8 text-[30px] p-8 shadow-lg shadow-gray-400 rounded-3xl justify-around md:m-4'>
                 <p className='font-bold text-center'>{showData?.show?.name}</p>
@@ -44,6 +46,9 @@ const Summary = () => {
             </div>
 
         </div>
+        }
+        </>
+       
     )
 }
 
