@@ -11,7 +11,7 @@ const ShowCard = ({ item, i }) => {
 
 
     return (
-        <div key={i} className='flex w-80 flex-col shadow-lg shadow-gray-300 m-1 rounded-lg    ' >
+        <div key={i} className='flex w-80 flex-col shadow-lg shadow-gray-300 rounded-lg    ' >
             <div className=' p-4 w-80 mix-blend-color-burn object-contain'>
                 <Lazyloader className="h-96 w-80 rounded-md" src={(item?.show?.image?.original) ? (item?.show?.image?.original) : "https://demofree.sirv.com/nope-not-here.jpg"} />
             </div>

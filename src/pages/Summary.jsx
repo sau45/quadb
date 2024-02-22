@@ -9,12 +9,12 @@ const Summary = () => {
     const dispatch = useDispatch();
 
 
-    // useEffect(() => {
-    //     const storedData = localStorage.getItem('showData');
-    //     if (storedData) {
-    //         dispatch(setShowData(JSON.parse(storedData)));
-    //     }
-    // }, [dispatch]);
+    useEffect(() => {
+        const storedData = localStorage.getItem('showData');
+        if (storedData) {
+            dispatch(setShowData(JSON.parse(storedData)));
+        }
+    }, [dispatch]);
 
 
 
