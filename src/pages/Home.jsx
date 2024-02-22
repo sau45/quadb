@@ -13,7 +13,7 @@ const Home = () => {
 
 
   const handleButton = (item) => {
-    localStorage.setItem('showData', JSON.stringify(item));
+    // localStorage.setItem('showData', JSON.stringify(item));
 
     dispatch(setShowData(item));
     navigate("/summary");
